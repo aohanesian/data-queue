@@ -4,6 +4,22 @@
     margin: 0;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 4px;
+    cursor: not-allowed;
+    margin: 20px 0;
+}
+
 .tile {
     width: 100px;
     height: 100px;
@@ -13,17 +29,4 @@
 
 .tile.selected {
     background-color: green;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 4px;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
 }
